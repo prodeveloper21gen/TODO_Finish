@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job Management App</title>
+</head>
+
+<body>
+
+    <!-- MENU BUTTONS -->
+    <div class="Menu">
+        <button class="MAINbtn">MAIN</button>
+        <button class="JOBSEARCHbtn">JOB SEARCH</button>
+        <button class="ADMINbtn">ADMIN</button>
+        <button class="MAbtn">MANAGE APPLICANTS</button>
+    </div>
+
+    <!-- First blok -->
+    <div class="Main">
+        <div class="zag1">
+            <h1 class="TitleLJ">Latest job</h1>
+        </div>
+        <hr style="height: 1px;color: aqua; background-color: rgb(116, 116, 116); margin-top: 8px;">
+        <div class="bob1"></div>
+    </div>
+
+    <!-- Second blok -->
+    <div class="JobSearch">
+        <div class="zag1">
+            <h1 class="TitleLJ">Job ads</h1>
+        </div>
+        <hr style="height: 1px;color: aqua; background-color: rgb(116, 116, 116); margin-top: 8px;">
+        <select name="" id="selectCategory">
+            <option value="">All category</option>
+            <option value="">Frontend</option>
+            <option value="">Backend</option>
+        </select>
+        <select name="" id="selectLevel">
+            <option value="">All level</option>
+            <option value="">Junior</option>
+            <option value="">Middle</option>
+            <option value="">Senior</option>
+            <option value="">Full-stack</option>
+        </select>
+        <div class="bob2"></div>
+    </div>
+
+    <!-- Third blok -->
+    <div class="Admin">
+        <div class="zag1">
+            <h1 class="TitleLJ">Job ad admin</h1>
+            <button class="addBtn">CREATE NEW</button>
+        </div>
+        <hr style="height: 1px;color: aqua; background-color: rgb(116, 116, 116); margin-top: 8px;">
+        <input class="searchInp1" type="search" placeholder="🔍 Name, email, etc...">
+        <div class="bob3">
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Level</th>
+                        <th>Location</th>
+                        <th>Phone number</th>
+                        <th>Application</th>
+                        <th>Closing</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="box1"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Fourth blok -->
+    <div class="MANAGEAPPLICANTS">
+        <div class="zag1">
+            <h1 class="TitleLJ">Applications</h1>
+            <button class="addBtn2">CREATE NEW</button>
+        </div>
+        <hr style="height: 1px;color: aqua; background-color: rgb(116, 116, 116); margin-top: 8px;">
+        <input class="searchInp2" type="search" placeholder="🔍 Name, email, etc...">
+        <div class="bob4">
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Email</th>
+                        <th>Location</th>
+                        <th>Phone number</th>
+                        <th>Response</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="box2"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ADD DIALOG -->
+    <dialog class="addModal">
+        <div class="form1" action="">
+            <div class="addNav">
+                <h1>Details</h1>
+                <div class="addBtns">
+                    <button class="CancelAdd">CANCEL</button>
+                    <button class="saveTask">SAVE</button>
+                </div>
+            </div>
+            <hr style="margin: 20px 0px;">
+            <input type="text" placeholder="Title" name="" id="title">
+            <input type="date" name="" id="closing">
+            <select class="formLevelSelect" name="" id="level">
+                <option value="" disabled selected>level</option>
+                <option value="">Junior</option>
+                <option value="">Middle</option>
+                <option value="">Senior</option>
+                <option value="">Full-stack</option>
+            </select>
+            <input type="number" placeholder="Phone number" name="" id="phoneNumber">
+            <input class="locInp" placeholder="Location" type="text" name="" id="locInp">
+            <select class="formCategorySelect" name="" id="formCategorySelect">
+                <option value="" disabled selected>Category</option>
+                <option value="">Backend</option>
+                <option value="">Frontend</option>
+                <option value="">Full-stack</option>
+            </select>
+            <textarea name="" id="Description" placeholder="Description"></textarea>
+            <textarea name="" id="EssentialCriteria" placeholder="Essential criteria"></textarea>
+            <textarea name="" id="DesirableCriteria" placeholder="Desirable criteria"></textarea>
+            <textarea name="" id="Benifits" placeholder="Benefits"></textarea>
+        </div>
+    </dialog>
+
+    <!-- EDIT DIALOG -->
+    <dialog class="editModal">
+        <div class="form1" action="">
+            <div class="addNav">
+                <h1>Details</h1>
+                <div class="addBtns">
+                    <button class="CancelEdit">CANCEL</button>
+                    <button class="saveEditTask">SAVE</button>
+                </div>
+            </div>
+            <hr style="margin: 20px 0px;">
+            <input type="text" placeholder="Title" name="" id="editTitle">
+            <input type="date" name="" id="editClosing">
+            <select class="formLevelSelect" name="" id="editLevel">
+                <option value="" disabled selected>level</option>
+                <option value="">Junior</option>
+                <option value="">Middle</option>
+                <option value="">Senior</option>
+                <option value="">Full-stack</option>
+            </select>
+            <input type="number" placeholder="Phone number" id="editPhone" name="editPhone" value="">
+            <input class="editlocInp" placeholder="Location" type="text" name="" id="editLocInp">
+            <select class="editCategorySelect" name="" id="editCategorySelect">
+                <option value="" disabled selected>Category</option>
+                <option value="">Backend</option>
+                <option value="">Frontend</option>
+                <option value="">Full-stack</option>
+            </select>
+            <textarea name="" id="editDescription" placeholder="Description"></textarea>
+            <textarea name="" id="editEssentialCriteria" placeholder="Essential criteria"></textarea>
+            <textarea name="" id="editDesirableCriteria" placeholder="Desirable criteria"></textarea>
+            <textarea name="" id="editBenifits" placeholder="Benefits"></textarea>
+        </div>
+    </dialog>
+
+    <!-- SEE MORE MODAL -->
+    <dialog class="seeMoreModal">
+        <div class="form1" action="">
+            <div class="addNav">
+                <h1 id="smTitle"></h1>
+                <div class="addBtns">
+                    <button class="smCancel">BACK</button>
+                    <button class="smApply">Apply</button>
+                </div>
+            </div>
+            <hr style="border: 2px solid rgb(210, 210, 210); background-color: rgb(172, 172, 172); margin-top: 20px;">
+            <div class="inpsInfos">
+                <div class="smInfo">
+                    <h3>Closing Date</h3>
+                    <p id="smClosing">Nothing</p>
+                </div>
+                <div class="smInfo">
+                    <h3>Category</h3>
+                    <p id="smCategory">Nothing</p>
+                </div>
+                <div class="smInfo">
+                    <h3>Level</h3>
+                    <p id="smLevel">Nothing</p>
+                </div>
+                <div class="smInfo">
+                    <h3>Location</h3>
+                    <p id="smLocation">Nothing</p>
+                </div>
+            </div>
+            <div class="descsInfos">
+                <h3>Job Description</h3>
+                <p id="smDescription">Nothing</p>
+                <h3>Essential criteria</h3>
+                <p id="smEC">Nothing</p>
+                <h3>Desirable criteria</h3>
+                <p id="smDC">Nothing</p>
+                <h3>Benefits</h3>
+                <p id="smBenifit">Nothing</p>
+            </div>
+        </div>
+        </div>
+    </dialog>
+
+    <!-- ADD MODAL2 -->
+    <dialog class="addModal2">
+        <div class="form1" action="">
+            <div class="addNav">
+                <h1>Details</h1>
+                <div class="addBtns">
+                    <button class="CancelAdd2">CANCEL</button>
+                    <button class="saveTask2">SAVE</button>
+                </div>
+            </div>
+            <hr style="margin: 20px 0px;">
+            <input type="text" placeholder="First name" name="" id="firstName">
+            <input type="text" placeholder="Last name" name="" id="lastName">
+            <input type="email" placeholder="Email" name="" id="email">
+            <input type="number" placeholder="Phone number" name="" id="phoneNumber2">
+            <input class="locInp" placeholder="Location" type="text" name="" id="locInp2">
+            <input class="imgInp" placeholder="url of avatar" type="url" name="" id="imgInp">
+            <textarea name="" id="address" placeholder="Address"></textarea>
+        </div>
+    </dialog>
+
+    <!-- EDIT DIALOG -->
+    <dialog class="editModal2">
+        <div class="form1" action="">
+            <div class="addNav">
+                <h1>Details</h1>
+                <div class="addBtns">
+                    <button class="CancelEdit2">CANCEL</button>
+                    <button class="saveEditTask2">SAVE</button>
+                </div>
+            </div>
+            <hr style="margin: 20px 0px;">
+            <input type="text" placeholder="First name" name="" id="editfirstName">
+            <input type="text" placeholder="Last name" name="" id="editlastName">
+            <input type="email" placeholder="Email" name="" id="editEmail">
+            <input type="number" placeholder="Phone number" name="" id="editPhone2">
+            <input class="locInp" placeholder="Location" type="text" name="" id="editLocInp2">
+            <input class="imgInp" placeholder="url of avatar" type="url" name="" id="editImgInp">
+            <textarea name="" id="editAddress" placeholder="Address"></textarea>
+        </div>
+    </dialog>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="/main.js"></script>
+    <!-- END OF SCRIPT -->
+</body>
+
+</html>

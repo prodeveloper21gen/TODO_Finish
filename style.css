@@ -1,0 +1,593 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+    color: #414141;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(145deg, white, rgb(247, 255, 255), rgb(255, 255, 255));
+    height: 100vh;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+body div{
+    background-color: transparent;
+}
+
+.Menu {
+    background-color: transparent;
+    width: 18%;
+    height: 100%;
+}
+
+.MAINbtn {
+    margin: 10px 0px;
+    color: #0099ff;
+    padding-left: 20px;
+    text-align: start;
+    border: none;
+    word-wrap: break-word;
+    background: #2196F314;
+    width: 100%;
+    height: 40px;
+    border-right: 2px solid #2196F3;
+}
+
+.JOBSEARCHbtn {
+    margin: 10px 0px;
+    color: #414141;
+    padding-left: 20px;
+    text-align: start;
+    border: none;
+    word-wrap: break-word;
+    background: #2195f300;
+    width: 100%;
+    height: 40px;
+    border-right: 2px solid #2195f300;
+}
+
+.ADMINbtn {
+    margin: 10px 0px;
+    color: #414141;
+    padding-left: 20px;
+    text-align: start;
+    border: none;
+    word-wrap: break-word;
+    background: #2195f300;
+    width: 100%;
+    height: 40px;
+    border-right: 2px solid #2195f300;
+}
+
+.MAbtn {
+    margin: 10px 0px;
+    color: #414141;
+    padding-left: 20px;
+    text-align: start;
+    border: none;
+    word-wrap: break-word;
+    background: #2195f300;
+    width: 100%;
+    height: 40px;
+    border-right: 2px solid #2195f300;
+}
+
+.TitleLJ {
+    padding: 10px 0px;
+    font-size: 40px;
+}
+
+.bob1 {
+    scrollbar-color: black rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 83%;
+    margin-top: 15px;
+    background-color: #81818100;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.bob2{
+    scrollbar-color: black rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 75%;
+    background-color: #81818100;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.Main {
+    position: absolute;
+    margin-left: 19%;
+    padding: 0px 20px;
+    width: 78%;
+    height: 100%;
+}
+
+.JobSearch {
+    position: absolute;
+    margin-left: 19%;
+    padding: 0px 20px;
+    width: 78%;
+    height: 100%;
+    display: none;
+}
+
+.Admin {
+    position: absolute;
+    margin-left: 19%;
+    padding: 0px 20px;
+    width: 78%;
+    height: 100%;
+    display: none;
+}
+
+.MANAGEAPPLICANTS {
+    position: absolute;
+    margin-left: 19%;
+    padding: 0px 20px;
+    width: 78%;
+    height: 100%;
+    display: none;
+}
+
+.zag1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zag1 button{
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2196F3;
+    color: white;
+    position: relative;
+    top: 20px;
+    width: 150px;
+    height: 45px;
+}
+
+.zag1 button:hover{
+    color: #0084ff;
+    background-color: #ffffffbe;
+    border: 2px solid #2196F3;
+}
+
+select {
+    background-color: transparent;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    outline-color: rgb(0, 153, 255);
+}
+
+dialog {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(68, 68, 68) rgba(255, 255, 255, 0);
+    border: 20px solid rgb(255, 255, 255);
+    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(145deg, white, rgb(237, 255, 255), rgb(255, 255, 255));
+}
+.form1 {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.form1 input {
+    cursor: default;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    margin: 10px 15px;
+    width: 42.5%;
+    height: 40px;
+    outline-color: #0099ff;
+    background-color: transparent;
+
+}
+
+.form1 textarea {
+    background-color: transparent;
+    font-size: 20px;
+    /* display: none; */
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    margin-left: 15px;
+    width: 91.3%;
+    height: 130px;
+    border: 2px solid gray;
+    outline-color: #0099ff;
+}
+
+.locInp {
+    margin: 10px auto;
+    width: 92.5%;
+    margin-left: 15px;
+}
+
+.formLevelSelect {
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 44.7%;
+    height: 55px;
+}
+.editLevel {
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 44.7%;
+    height: 55px;
+}
+
+.formCategorySelect {
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 44.7%;
+    height: 55px;
+}
+.editCategorySelect {
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 44.7%;
+    height: 55px;
+}
+
+.addNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addBtns button {
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #0099ff;
+    margin: 5px;
+}
+
+.addBtns button:hover {
+    color: #0099ff;
+    border-radius: 10px;
+    border: 2px solid #0099ff;
+    padding: 8px 18px;
+    background-color: #c9ddeb00;
+}
+
+.inpsInfos{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inpsInfos .smInfo {
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid rgb(160, 160, 160);
+    width: 23%;
+    padding: 10px 0px;
+    background-color: rgb(235, 235, 235);
+}
+
+.inpsInfos .smInfo h3{
+    font-size: 18px;
+}
+
+.inpsInfos .smInfo p{
+    font-size: 15px;
+}
+
+.descsInfos h3{
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.descsInfos p{
+    font-size: 15px;
+    text-align: left;
+}
+
+.searchInp1 {
+    border-radius: 8px;
+    background-color: transparent;
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    outline-color: #0099ff;
+    font-size: 15px;
+}
+
+.searchInp2 {
+    border-radius: 8px;
+    background-color: transparent;
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    outline-color: #0099ff;
+    font-size: 15px;
+}
+
+.bob3 {
+    scrollbar-color: rgb(157, 157, 157) rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    border-radius: 7px;
+    border: 1px solid #a8a8a8;
+    background-color: #92a4b100;
+    width: 100%;
+    height: 495px;
+}
+.bob4 {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    border-radius: 7px;
+    border: 1px solid #a8a8a8;
+    background-color: #92a4b100;
+    width: 100%;
+    height: 495px;
+}
+
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.userImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.table2 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table2 th {
+    border-radius: 10px 10px 0px 0px;
+    position: sticky;
+    background-color: rgb(248, 250, 252);
+    top: 0px;
+    padding: 17px 0px;
+    border-bottom: 1px solid #a8a8a8;
+}
+
+.table1 th {
+    border-radius: 10px 0px 10px 0px;
+    position: sticky;
+    background-color: rgb(248, 250, 252);
+    top: 0px;
+    padding: 17px 0px;
+    border-bottom: 1px solid #a8a8a8;
+}
+.table1 td {
+    background-color: rgb(248, 250, 252);
+    padding: 11.467px 0px;
+    border-bottom: 1px solid #a8a8a8;
+}
+
+.tduser{
+    align-items: center;
+    justify-content: space-evenly;
+}
+.restd{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #cccccc;
+}
+.table2 td {
+    font-size: 15px;
+    background-color: rgb(248, 250, 252);
+    padding: 9px 0px;
+    border-bottom: 1px solid #a8a8a8;
+}
+
+#appTd{
+    border-radius: 10px;
+    padding: 5px 0px;
+    background-color: #d1d1d1;
+}
+.editBtn{
+    margin: 0px 3px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    background-color: #0099ff;
+}
+
+.editBtn:hover{
+    color: #00b71f;
+    border-radius: 5px;
+    border: 2px solid #00bb10;
+    padding: 3px 8px;
+    background-color: #c9ddeb00;
+}
+
+.deleteBtn{
+    margin: 0px 3px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    background-color: #0084ff;
+}
+
+.deleteBtn:hover {
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+    border: 2px solid #ff0000;
+    padding: 3px 8px;
+    background-color: #ffcccc00;
+}
+
+.card {
+    background: linear-gradient(145deg, #dce6ee, #ffffff, rgb(220, 231, 231), rgb(255, 255, 255));
+    text-align: start;
+    word-wrap: break-word;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 44%;
+    margin: 10px 0px;
+    margin-left: 20px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #cecece;
+    border-right: 1px solid #d1d1d1;
+}
+
+.card:hover{
+    background: linear-gradient(145deg, #ffffff, #d3dbe2, rgb(255, 255, 255), rgb(217, 227, 228));
+    transition: 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgb(219, 219, 219);
+}
+
+.card h1 {
+    text-align: start;
+    grid-column: 1 / 3;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card p:first-of-type {
+    text-align: start;
+    grid-column: 1 / 3;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #585858;
+}
+
+#cardLevel {
+    grid-row: 1;
+    grid-column: 3;
+    background-color: #e0e7ff;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+#cardLoc {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: end;
+}
+
+.seeMoreBtn {
+    font-size: 18px;
+    font-weight: 500;
+    grid-column: 1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-self: start;
+}
+
+#butt {
+    margin: 0;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 25px;
+    color: #fff;
+    outline: none;
+    padding-bottom: -10px;
+    background: linear-gradient(145deg, rgb(0, 102, 255), #b6e4ff, rgb(0, 140, 255), #b6e4ff, rgb(0, 132, 255));
+    box-shadow: 0 0px 10px rgba(177, 177, 177, 0.6);
+    position: relative;
+    text-align: center;
+}
+#butt > span{
+    position: relative;
+    z-index: 0;
+}
+#butt:after {
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(145deg, rgb(192, 217, 255), #00a2ff, rgb(194, 228, 255), #00a2ff, rgb(184, 221, 255));
+    box-shadow: 0 0px 10px rgba(185, 185, 185, 0.9);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#butt:hover:after {
+    animation: anim 1.5s infinite;
+    opacity: 1;
+}
+
+@keyframes anim {
+    0%{
+        background: linear-gradient(145deg, rgb(0, 102, 255), #b6e4ff, rgb(0, 140, 255), #b6e4ff, rgb(0, 132, 255));
+        opacity: 0;
+    }
+    50%{
+        background: linear-gradient(145deg, rgb(219, 233, 255), #0084ff, rgb(194, 228, 255), #006eff, rgb(221, 239, 255));
+        opacity: 1;
+        border: none;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+    }
+    100%{
+        opacity: 0;
+        background: linear-gradient(145deg, rgb(0, 102, 255), #b6e4ff, rgb(0, 140, 255), #b6e4ff, rgb(0, 132, 255));
+    }
+}
