@@ -185,6 +185,7 @@ export function userData1(data) {
         };
         tbody.querySelector('.editBtn').onclick = () => {
             document.querySelector('#editfirstName').value = element.firstName;
+            document.querySelector('#editlastName').value = element.lastName;
             document.querySelector('#editLocInp2').value = element.location;
             document.querySelector('#editPhone2').value = element.phoneNumber;
             document.querySelector('#editAddress').value = element.address;
@@ -203,9 +204,9 @@ export function userData1(data) {
                     image: document.querySelector('#editImgInp').value,
                 }
                 editTask2(obj, element.id);
-                editModal2.close();
                 Get2();
                 Get();
+                editModal2.close();
             }
         }
     });
