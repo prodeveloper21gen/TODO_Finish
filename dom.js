@@ -85,7 +85,7 @@ saveTask.onclick = () => {
     const obj = {
         title: document.querySelector('#title').value,
         category: document.querySelector('#formCategorySelect').options[formCategorySelect.selectedIndex].innerHTML,
-        level: document.querySelector('#level').options[editCategorySelect.selectedIndex].innerHTML,
+        level: document.querySelector('#level').options[level.selectedIndex].innerHTML,
         location: document.querySelector('#locInp').value,
         closing: document.querySelector('#closing').value,
         phoneNumber: document.querySelector('#phoneNumber').value,
@@ -96,7 +96,7 @@ saveTask.onclick = () => {
     }
     document.querySelector('#title').value = '';
     document.querySelector('#formCategorySelect').options[formCategorySelect.selectedIndex].innerHTML = 'Category';
-    document.querySelector('#level').options[editCategorySelect.selectedIndex].innerHTML = 'Level';
+    document.querySelector('#level').options[level.selectedIndex].innerHTML = 'Level';
     document.querySelector('#locInp').value = '';
     document.querySelector('#closing').value = '';
     document.querySelector('#phoneNumber').value = '';
