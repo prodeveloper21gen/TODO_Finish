@@ -21,6 +21,7 @@ const editModal = document.querySelector('.editModal');
 const editModal2 = document.querySelector('.editModal2');
 const smCancel = document.querySelector('.smCancel');
 const smApply = document.querySelector('.smApply');
+const mode = document.querySelector('.mode');
 const seeMoreModal = document.querySelector('.seeMoreModal');
 
 function showSection(section, button) {
@@ -116,6 +117,15 @@ smApply.onclick = () => {
     addModal2.showModal();
     seeMoreModal.close();
 };
+const theme = localStorage.getItem("theme");
+
+mode.onclick = () => {
+    localStorage.setItem("theme", theme == "light" ? "dark" : theme == "dark" ? "light" : "light");
+    window.location.reload();
+}
+
+const body = document.querySelector(".body");
+theme == "dark" ? body.classList.add("body-dark") : body.classList.remove;
 
 Get();
 Get2();
