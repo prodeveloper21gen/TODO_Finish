@@ -2,14 +2,14 @@
     margin: 0px;
     padding: 0px;
     font-weight: 700;
-    color: #414141;
+    color: #646464;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
 }
 
-body {
+.body {
+    background-color: transparent;
     display: flex;
-    background: linear-gradient(145deg, white, rgb(247, 255, 255), rgb(255, 255, 255));
     height: 100vh;
     align-items: center;
     margin: 0px;
@@ -65,6 +65,18 @@ body div{
     border-right: 2px solid #2195f300;
 }
 
+.mode{
+    font-size: 40px;
+    margin: 10px 0px;
+    padding: 5px;
+    padding-bottom: 8px;
+    border: none;
+    word-wrap: break-word;
+    background: #bebebe;
+    border-radius: 50%;
+    outline-color: rgba(255, 255, 255, 0);
+}
+
 .MAbtn {
     margin: 10px 0px;
     color: #414141;
@@ -112,35 +124,35 @@ body div{
 
 .Main {
     position: absolute;
-    margin-left: 19%;
+    margin-left: 18%;
     padding: 0px 20px;
-    width: 78%;
+    width: 79%;
     height: 100%;
 }
 
 .JobSearch {
     position: absolute;
-    margin-left: 19%;
+    margin-left: 18%;
     padding: 0px 20px;
-    width: 78%;
+    width: 79%;
     height: 100%;
     display: none;
 }
 
 .Admin {
     position: absolute;
-    margin-left: 19%;
+    margin-left: 18%;
     padding: 0px 20px;
-    width: 78%;
+    width: 79%;
     height: 100%;
     display: none;
 }
 
 .MANAGEAPPLICANTS {
     position: absolute;
-    margin-left: 19%;
+    margin-left: 18%;
     padding: 0px 20px;
-    width: 78%;
+    width: 79%;
     height: 100%;
     display: none;
 }
@@ -182,13 +194,14 @@ select {
 dialog {
     scrollbar-width: thin;
     scrollbar-color: rgb(68, 68, 68) rgba(255, 255, 255, 0);
-    border: 20px solid rgb(255, 255, 255);
+    border: 20px solid rgba(255, 255, 255, 0);
     height: auto;
     padding: 0;
     margin: 0;
     width: 100%;
     margin: auto;
-    background: linear-gradient(145deg, white, rgb(237, 255, 255), rgb(255, 255, 255));
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(1000px);
 }
 .form1 {
     width: 50%;
@@ -355,7 +368,6 @@ dialog {
     overflow-x: auto;
     border-radius: 7px;
     border: 1px solid #a8a8a8;
-    background-color: #92a4b100;
     width: 100%;
     height: 495px;
 }
@@ -364,7 +376,6 @@ dialog {
     overflow-x: auto;
     border-radius: 7px;
     border: 1px solid #a8a8a8;
-    background-color: #92a4b100;
     width: 100%;
     height: 495px;
 }
@@ -390,22 +401,23 @@ dialog {
 .table2 th {
     border-radius: 10px 10px 0px 0px;
     position: sticky;
-    background-color: rgb(248, 250, 252);
+    background-color: rgb(179, 179, 179);
     top: 0px;
     padding: 17px 0px;
     border-bottom: 1px solid #a8a8a8;
+    color: black;
 }
 
 .table1 th {
-    border-radius: 10px 0px 10px 0px;
+    color: black;
+    border-radius: 10px 10px 0px 0px;
     position: sticky;
-    background-color: rgb(248, 250, 252);
+    background-color: rgb(184, 184, 184);
     top: 0px;
     padding: 17px 0px;
     border-bottom: 1px solid #a8a8a8;
 }
 .table1 td {
-    background-color: rgb(248, 250, 252);
     padding: 11.467px 0px;
     border-bottom: 1px solid #a8a8a8;
 }
@@ -421,7 +433,6 @@ dialog {
 }
 .table2 td {
     font-size: 15px;
-    background-color: rgb(248, 250, 252);
     padding: 9px 0px;
     border-bottom: 1px solid #a8a8a8;
 }
@@ -430,6 +441,7 @@ dialog {
     border-radius: 10px;
     padding: 5px 0px;
     background-color: #d1d1d1;
+    color: black;
 }
 .editBtn{
     margin: 0px 3px;
@@ -468,7 +480,7 @@ dialog {
 }
 
 .card {
-    background: linear-gradient(145deg, #dce6ee, #ffffff, rgb(220, 231, 231), rgb(255, 255, 255));
+    background: linear-gradient(145deg, #dce6eeb6, #ffffffa6, rgba(220, 231, 231, 0.644), rgba(255, 255, 255, 0.644));
     text-align: start;
     word-wrap: break-word;
     display: grid;
@@ -486,6 +498,7 @@ dialog {
     border-left: 1px solid #ffffff;
     border-bottom: 1px solid #cecece;
     border-right: 1px solid #d1d1d1;
+    color: black;
 }
 
 .card:hover{
@@ -590,4 +603,7 @@ dialog {
         opacity: 0;
         background: linear-gradient(145deg, rgb(0, 102, 255), #b6e4ff, rgb(0, 140, 255), #b6e4ff, rgb(0, 132, 255));
     }
+}
+.body-dark {
+    background-color: black;
 }
